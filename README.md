@@ -21,3 +21,17 @@ Durante a análise foram avaliados os seguintes aspectos:
 - Possíveis vulnetabilidades de segurança
 
 ---
+
+# Estratégia de Testes
+Foi utilizada a técnica de **Testes Exploratórios**.
+
+## Abordagem incluiu:
+- Testes de campos obrigatórios
+- Testes de dados inválidos
+- Testes de consistência de fluxo
+- Testes de autenticação
+- Testes de duplicidade de cadastro
+- Testes de comportamento inesperado do sistema
+
+---
+
