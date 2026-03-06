@@ -35,3 +35,11 @@ Foi utilizada a técnica de **Testes Exploratórios**.
 
 ---
 
+# Ambiente de Testes
+
+| Item | Detalhes |
+| ---- | -------- |
+| Sistema |  4Blue QA Play |
+| URL | https://qa-play-sim.lovable.app |
+| Navegador | Firefox - 148.0 (64-bits) / Chrome - 145.0.7632.160 (Versão oficial) 64 bits |
+| Sistema Operacional | Windows 10 |
