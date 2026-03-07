@@ -203,3 +203,29 @@ Alta
 
 ---
 ---
+
+## Título
+**BUG-06 → Campos do formulário se sobrepõem no layout desktop**
+
+## Descrição
+Durante a execução dos testes foi observado que os campos do formulário apresentam sobreposição no layout desktop, causando quebra visual e ultrapassando os limites do seu container.
+
+## Passo para reproduzir
+    1. Acesar a página de cadastro.
+    2. Visualizar a página em resolução padrão.
+    3. Observar posicionamento dos campos do formulário.
+
+## Resultado atual
+Os campos do formulário se sobrepõem e ultrapassam os limites visuais do layout.
+
+## Resultado esperado
+Os campos deveriam respeitar o espaçamento do layout, mantendo alinhamento correto e sem sobreposição.
+
+## Severidade
+Baixa
+
+## Prioridade
+Baixa
+
+## Evidências
+![Evidência quebra layout](evidencias/7-quebra_layout.gif)
