@@ -119,3 +119,28 @@ Alta
 
 ---
 ---
+
+## Título:
+**BUG-03 → Sitema permite cadastro duplicado**
+
+## Descrição:
+O sistema permite criar múltiplas contas utilizando o mesmo email.
+
+## Passos para reproduzir:
+    1. Criar uma conta com email válido
+    2. Tentar criar novamente utilizando o mesmo email
+
+## resultado atual:
+O sistema permiti criar outra conta com mesmo email.
+
+## Resultado esperado:
+O sistema deve impedir o cadastro duplicado e exibir mensagem informando "Email já está registrado, use outro email ou faça o login." e permanecer na tela de cadastro
+
+## Severidade
+Alta
+
+## Prioridade
+Média
+
+## Evidências
+![Evidência email ja cadastrado](evidencias/6-cadastrar_email_existente.gif)
