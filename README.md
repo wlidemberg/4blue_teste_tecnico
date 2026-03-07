@@ -49,4 +49,26 @@ Foi utilizada a técnica de **Testes Exploratórios**.
 # Bugs Identificados
 Durante os testes exploratórios foram identificados os seguintes defeitos no sistema.
 
+## Título:
 
+BUG- → Sistema permite cadastro com campos obrigatórios vazios
+
+## Descrição:
+O sistema permite a criação de contas mesmo quando nenhum campo do formulário de cadastro é preenchido.
+
+## Passos para reproduzir
+    1. Acessar página de cadastro
+    2. Não preencher nenhum campo
+    3. Clicar no botão "Cadastrar"
+
+## Resultado atual:
+O sistema redireciona para "/sucesso?op=cadastro", exibindo mensagem "Conta criada com sucesso"
+
+## Resultado esperado:
+O resultado deveria impedir o envio do formulário e exibir mensagem informando "Os campos obrigatórios devem ser preenchidos".
+
+## Severidade
+Crítico
+
+## Prioridade
+Alta
