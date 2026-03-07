@@ -229,3 +229,46 @@ Baixa
 
 ## Evidências
 ![Evidência quebra layout](evidencias/7-acesso_direto_url.gif)
+
+---
+
+## Priorização de Correção
+Os dois bugs que deve ser corrigidos primeiro são:
+
+### 1 - Cadastro permite a criação de conta com campos vazios
+Esse problema compromete a integridade da base de dados, permitindo a criação de usuários inválidos e registro incomppletos no sistema.
+Sem validação de campos obrigatórios, diversos fluxos do sistema podem ser afetados, incluindo autenticação e gerencimento de contas.
+
+### 2 - Cadastro permite duplicidade de contas
+O sistema permite a criação de múltiplas contas utilizando o mesmo email.
+Essa falha viola um regra básica de autenticação e pode gerar conflitos de identidade, problemas de login e incosistência na base de usuários.
+
+---
+
+## Sugestões de melhoria
+
+Durante a execução dos testes foram identificadas oportunidades de melhoria no sistema:
+
+    1. Implementar validações de formulário no frontend
+    2. Implementar validação no backend
+    3. Proteger rotas contra acesso direto por URL
+    4. Melhorar feedback visual de erros ao usuário
+    5. Corrigir problemas de responsividade no desktop
+    6. Restringir acesso direto à página de sucesso
+    7. Padronizar respostas de erro da aplicação
+    8. Implementar sistema de logs
+
+---
+
+## Considerações sobre Segurança e Controle de Fluxo
+
+No BUG-05 foi identificado que a página de sucesso pode ser acessada diretamente via URL.
+
+Exemplo:
+
+/sucesso?op=login
+
+Esse comportamento indica ausência de verificação de estado da operação ou validação de sessão antes da renderização da página.
+Esse tipo de situação caracteriza uma falha de **controle de fluxo da aplicação**, pois páginas de confirmação deveriam ser acessíveis apenas após a execução correta das operações de login ou cadastro.
+Durante os testes não foi possível identificar exposição de dados sensíveis, acesso a áreas autenticadas ou impacto direto na segurança da aplicação.
+Por esse motivo o problema foi classificado como **Severidade Baixa**, embora seja recomendável implementar validação de estado da operação ou sessão para evitar acesso direto a páginas de sucesso.
