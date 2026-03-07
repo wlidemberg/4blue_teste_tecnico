@@ -172,3 +172,34 @@ Média.
 
 ## Evidências
 ![Evidência erro inesperado](evidencias/5-login_credenciais_cadastradas.gif)
+
+---
+---
+
+## Título:
+**BUG-05 → Acesso direto a página Login realizado com sucesso**
+
+## Descrição:
+O sistema permite acessar diretamente a página "/sucesso?op=login" através da URL, sem qualquer autenticação prévia.
+
+## Passos para reproduzir:
+    1. Abrir o navegador sem estar autenticado
+    2. Acessar diretamente a URL: https://qa-play-sim.lovable.app/sucesso?op=login.
+
+## Resultado atual:
+A página Login realizado com sucesso é exibida.
+
+## Resultado Esperado
+O sistema deveria verificar se existe sessão ativa e redirecionar para a página de login caso o usuário não esteja autenticado.
+
+## Severidade:
+Média
+
+## Prioridade:
+Alta
+
+## Evidências
+![Evidências aceeso direto](evidencias/7-acesso_direto.gif)
+
+---
+---
