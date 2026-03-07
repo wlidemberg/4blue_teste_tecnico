@@ -72,3 +72,6 @@ Crítico
 
 ## Prioridade
 Alta
+
+## Evidências
+![Evidência do Bug](evidencias/1-cadastro_campos_vazios.gif)
