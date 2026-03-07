@@ -144,3 +144,31 @@ Média
 
 ## Evidências
 ![Evidência email ja cadastrado](evidencias/6-cadastrar_email_existente.gif)
+
+---
+---
+
+## Título:
+**BUG-04 → Sistema apresenta erro inesperado após login válido**
+
+## Descrição:
+O sistema exibe mensagem "Erro inesperado", mesmo quando o login é realizado corretamente.
+
+## Passos para reproduzir:
+    1. Criar conta com dados válidos.
+    2. Realizar login utilizando as credenciais criadas.
+
+## Resultado atual:
+O usuário é redirecionado para a tela de Login realizado com sucesso, porem o sistema exibe mensagem informando "Erro inesperado".
+
+## Resultado esperado:
+Após o login válido, o sistema deveria exibir apenas a mensagem "Login realizado com sucesso", sem apresentar erros.
+
+## Severidade:
+Média.
+
+## Prioridade:
+Média.
+
+## Evidências
+![Evidência erro inesperado](evidencias/5-login_credenciais_cadastradas.gif)
