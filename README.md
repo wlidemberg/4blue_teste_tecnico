@@ -51,11 +51,11 @@ Durante os testes exploratórios foram identificados os seguintes defeitos no si
 
 ---
 
-## Título:
+## Título
 
 **BUG-01 → Sistema permite cadastro com campos obrigatórios vazios**
 
-## Descrição:
+## Descrição
 O sistema permite a criação de contas mesmo quando nenhum campo do formulário de cadastro é preenchido.
 
 ## Passos para reproduzir
@@ -63,8 +63,8 @@ O sistema permite a criação de contas mesmo quando nenhum campo do formulário
     2. Não preencher nenhum campo
     3. Clicar no botão "Cadastrar"
 
-## Resultado atual:
-O sistema redireciona para "/sucesso?op=cadastro", exibindo mensagem "Conta criada com sucesso"
+## Resultado atual
+O sistema redireciona para "/sucesso?op=cadastro", exibindo mensagem "Conta criada com sucesso".
 
 ## Resultado esperado:
 O resultado deveria impedir o envio do formulário e exibir mensagem informando "Os campos obrigatórios devem ser preenchidos".
@@ -81,23 +81,23 @@ Alta
 ---
 ---
 
-## Título:
+## Título
 **BUG-02 → Sistema permite cadastro com dados inválidos**
 
-## Descrição:
+## Descrição
 O sistema permite cadastro utilizando dados inválidos como email em formato incorreto, senha inválida ou asencia de confirmação de senha.
 
-## Passos para reproduzir:
+## Passos para reproduzir
     1. Acessar página de cadastro
     2. Preencher email com formato inválido
     3. Informar senha fora do padrão esperado
     4. Informar confirmação de senha diferente da senha ou não preencher
     5. Clicar no botão "Cadastrar"
 
-## Resultado atual:
-O sistema cria a conta e redireciona para "/sucesso?op=cadastro", exibindo mensagem "Conta criada com sucesso"
+## Resultado atual
+O sistema cria a conta e redireciona para "/sucesso?op=cadastro", exibindo mensagem "Conta criada com sucesso".
 
-## Resultado esperado:
+## Resultado esperado
 O sistema deveria validar:
 - formato do email
 - regras mínimas de senha
@@ -120,21 +120,21 @@ Alta
 ---
 ---
 
-## Título:
+## Título
 **BUG-03 → Sitema permite cadastro duplicado**
 
-## Descrição:
+## Descrição
 O sistema permite criar múltiplas contas utilizando o mesmo email.
 
-## Passos para reproduzir:
+## Passos para reproduzir
     1. Criar uma conta com email válido
-    2. Tentar criar novamente utilizando o mesmo email
+    2. Tentar criar novamente utilizando o mesmo email.
 
-## resultado atual:
+## resultado atual
 O sistema permiti criar outra conta com mesmo email.
 
-## Resultado esperado:
-O sistema deve impedir o cadastro duplicado e exibir mensagem informando "Email já está registrado, use outro email ou faça o login." e permanecer na tela de cadastro
+## Resultado esperado
+O sistema deve impedir o cadastro duplicado e exibir mensagem informando "Email já está registrado, use outro email ou faça o login." e permanecer na tela de cadastro.
 
 ## Severidade
 Alta
@@ -148,26 +148,26 @@ Média
 ---
 ---
 
-## Título:
+## Título
 **BUG-04 → Sistema apresenta erro inesperado após login válido**
 
-## Descrição:
+## Descrição
 O sistema exibe mensagem "Erro inesperado", mesmo quando o login é realizado corretamente.
 
-## Passos para reproduzir:
+## Passos para reproduzir
     1. Criar conta com dados válidos.
     2. Realizar login utilizando as credenciais criadas.
 
-## Resultado atual:
+## Resultado atual
 O usuário é redirecionado para a tela de Login realizado com sucesso, porem o sistema exibe mensagem informando "Erro inesperado".
 
-## Resultado esperado:
+## Resultado esperado
 Após o login válido, o sistema deveria exibir apenas a mensagem "Login realizado com sucesso", sem apresentar erros.
 
-## Severidade:
+## Severidade
 Média.
 
-## Prioridade:
+## Prioridade
 Média.
 
 ## Evidências
@@ -176,26 +176,26 @@ Média.
 ---
 ---
 
-## Título:
+## Título
 **BUG-05 → Acesso direto a página Login realizado com sucesso**
 
-## Descrição:
+## Descrição
 O sistema permite acessar diretamente a página "/sucesso?op=login" através da URL, sem qualquer autenticação prévia.
 
-## Passos para reproduzir:
+## Passos para reproduzir
     1. Abrir o navegador sem estar autenticado
     2. Acessar diretamente a URL: https://qa-play-sim.lovable.app/sucesso?op=login.
 
-## Resultado atual:
+## Resultado atual
 A página Login realizado com sucesso é exibida.
 
 ## Resultado Esperado
 O sistema deveria verificar se existe sessão ativa e redirecionar para a página de login caso o usuário não esteja autenticado.
 
-## Severidade:
+## Severidade
 Média
 
-## Prioridade:
+## Prioridade
 Alta
 
 ## Evidências
@@ -228,4 +228,4 @@ Baixa
 Baixa
 
 ## Evidências
-![Evidência quebra layout](evidencias/7-quebra_layout.gif)
+![Evidência quebra layout](evidencias/7-acesso_direto_url.gif)
