@@ -1,6 +1,6 @@
 # Teste Técnico – QA Tester - Processo Seletivo – 4blue
 
-# Relatário e testes exploratórios
+# Relatório e testes exploratórios
 Este repositório contém relatório de testes exploratórios realizados no sistema:
 https://qa-play-sim.lovable.app/
 
